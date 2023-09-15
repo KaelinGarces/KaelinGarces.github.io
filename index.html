@@ -3,76 +3,94 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1">
-	<meta name="description" content="Kaelin Garces, Cybersecurity Student at Fordham University. ">
+	<meta name="description" content="Kaelin Garces, Graduate with MS in Cybersecurity">
 	<meta name="keywords" content="Kaelin Garces, Fordham University">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://use.typekit.net/gsl2hmq.css">
 	<title>Kaelin Garces</title>
 </head>
+
 <body>
 	<div class="nav">
-		<a name="home-section"></a>
 		<a href="#home-section" class="nav-item-left">KAELIN GARCES</a>
-		<a href="#project-section" class="nav-item-right">PROJECTS</a>
+		<a href="#projects-section" class="nav-item-right">PROJECTS</a>
 		<a href="#education-section" class="nav-item-right">EDUCATION</a>
 		<a href="#about-section" class="nav-item-right">ABOUT</a>
 	</div>
 
 	<div class="page-content"> 
-		<section class="container column" id="about-section"> <!--ABOUT-->
-			<p>My name is Kaelin Garces. I am a Cybersecurity student, programmer, and process automater.</p>
+
+		<!--ABOUT-->
+		<section class="container column" id="about-section"> 
+			<div class="container column">
+				<div id="typing-container">
+					<p>&nbsp</p>
+					<h3 id="static-text">Hi, my name is Kaelin Garces</h3>
+					<p id="typing-text"></p>
+				</div>
+			</div>
 		</section>
 		
 		<!--EDUCATION-->
-		<section class="container column" id="education">
-			<div id="text">
-				<h1>EDUCATION</h1><a name="education-section"></a>
-				<h3>Cybersecurity</h3>
-				<ul>
-					<li>Network Essentials</li>
-					<li>Cybersecurity Essentials</li>
-					<li>Information Security and Ethics</li>
-					<li>Cyber: Tech, Policy. & Law</li>
-					<li>Intelligence in Cybersecurity</li>
-					<li>Penetration Testing</li>
-					<li>Capstone in Cybersecurity</li>
-					<li>Intrusion Detection</li>
-					<li>Forensic Computing</li>
-					<li>Incident Response and Risk Management</li>
-					<li>Computer Forensics</li>
-				</ul>
-				<h3>Certifications</h3>
-				<ul>
-					<li>Comptia Security+ (In Progress)</li>
-					<li>AWS Certified Cloud Practiioner (In Progress)</li>
-					<li>AWS Solutions Architect (In Progress)</li>
-				</ul>
+		<section class="container column" id="education-section">
+			<div class="container column" id="text">
+				<div class="container row">
+					<h1>EDUCATION</h1><a name="education-main"></a>
 				</div>
-			</div>	
+				<div class="education-info">
+					<h2>Fordham University</h2>
+					<h3>M.S - Cybersecurity</h3>
+					<p>Graduated December 2022</p>
+				</div>
+				<div>
+					<h3>Cybersecurity</h3>
+					<ul>
+						<li>Network Essentials</li>
+						<li>Cybersecurity Essentials</li>
+						<li>Information Security and Ethics</li>
+						<li>Cyber: Tech, Policy. & Law</li>
+						<li>Intelligence in Cybersecurity</li>
+						<li>Penetration Testing</li>
+						<li>Capstone in Cybersecurity</li>
+						<li>Intrusion Detection</li>
+						<li>Forensic Computing</li>
+						<li>Incident Response and Risk Management</li>
+						<li>Computer Forensics</li>
+					</ul>
+					<h3>Certifications</h3>
+					<ul>
+						<li>Comptia Security+ (In Progress) </li>
+						<li>AWS Certified Cloud Practiioner (In Progress) </li>
+						<li>AWS Solutions Architect (In Progress) </li>
+					</ul>
+				</div>	
+			</div>
 		</section>
+
 		<!--PROJECTS-->
 		<section class="container column" id="projects-section">
 			<h1>PROJECTS</h1>
-			<div class="conatiner row" id="projects-nav">
-				<button class="button active">All</button>
-				<button class="button" onclick="filterSelection('python')">Python</button>
-				<button class="button" onclick="filterSelection('Kali')">Kali</button>
-			</div>
-			<div class="conatiner row" id="projects">
-				<div class="html project">
-					<img class="project-img" src="assets\img\filler.png" alt="">
+				<div class="conatiner row" id="projectsnav">
+					<button class="filter-button active" onclick="filterSelection('all')">All</button>
+					<button class="filter-button" onclick="filterSelection('python')">Python</button>
+					<button class="filter-button" onclick="filterSelection('kali')">Kali</button>
+					<button class="filter-button" onclick="filterSelection('autohotkey')">AutoHotKey</button>
 				</div>
-				<div class="html project">
-					<img class="project-img" src="assets\img\filler.png" alt="">
-				</div>
-				<div class="Kali project">
-					<img class="project-img" src="assets\img\filler.png" alt="">
-				</div>
+				<div class="container row">
+					<div class="conatiner row">
+						<div class="codingprojects python">Python</div>
+						<div class="codingprojects kali">Kali</div>
+						<div class="codingprojects autohotkey">AutoHotKey</div>
+						<div class="codingprojects autohotkey">AutoHotKey</div>
+						<div class="codingprojects autohotkey">AutoHotKey</div>
+						<div class="codingprojects autohotkey">AutoHotKey</div>
+					</div>
 				</div>
 			</div>
 		</section>
+
 		<!--FOOTER-->
-		<section class="footer">
+		<section class="container column" id="footer">
 			<div class="conatiner row" id="socials">
 				<a href="https://www.linkedin.com/in/KAELINGARCES/" class="social-links">Linkedin</a>
 				<span>&#9679;</span>
@@ -84,7 +102,10 @@
 				<p>Coded by Kaelin - 2022</p>
 			</div>
 		</section>
+
 	</div>	
+	<script src="my.js"></script>
+	<script src="filter.js"></script>
 </body>
 
 <!--Thanks for stopping by and                                        

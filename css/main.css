@@ -2,8 +2,6 @@
 
 body, html {
     width: 100%;
-    background-color: white;
-	color: #575757;
 	height: 100%;
 	scroll-behavior: smooth;
 	font-family: quicksand, sans-serif;
@@ -28,6 +26,8 @@ li {
 }
 
 .container {
+	scroll-margin-top: 60px;
+  	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -46,17 +46,18 @@ li {
 /* Navabr */
 .nav {
 	display: block;
+	top: 0%;
     left: 0%;
 	right: 0%;
 	background-color: white;
 	position: fixed;
-	box-shadow: 2px 2px 5px #aaaaaa;
+	/*box-shadow: 2px 2px 5px #aaaaaa;*/
 	z-index: 1;
 }
 
 .nav-item-left, .nav-item-right {
 	align-items: center;
-	display: block;
+	display:inline-block;
 	padding: 22px;
 	color: #354259;
 }
@@ -69,42 +70,65 @@ li {
 .nav-item-right {
 	float: right;
 	font-weight: 400;
+	opacity: .8;
+}
+
+.nav-item-right:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 550px) {
+    /* Style for the menu toggle button */
+	.nav-item-right {
+		display: none;
+	}
 }
 
 /* Page-Content */
 .page-content {
-	height: 100%;
-	padding-top: 60px;
+	margin:0 auto;
 }
 
 /*About*/
 #about-section {
+	height: 100px;
+	max-height: 50%;
+	min-height: 10%;
+	display: block;
+	text-align: center;
+	-ms-flex-align: center;
+	padding: 60px;
 	margin-top: 60px;
 }
 
+#about-section > p {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
 /*Education*/
-#education {
+#education-section {
 	flex-direction: column;
 	background-color:#ECE5C7;
+	padding: 60px;
+}
+
+.education-main {
+	text-align: left;
+	justify-content: left;
 }
 
 /*Project Section*/
 
 #projects-section {
-	margin: 50px;
+	padding: 50px;
+	text-align: center;
 }
 
 #projects-nav {
 	margin: 10px;
-}
-
-.button {
-	background-color: #e7e2e2;
-	padding: 20px;
-	border: none;
-	border-radius: 6px;
-	font-weight: 700;
-	color: #354259;
+	align-content: center;
+	justify-content: center;
 }
 
 .active {
@@ -112,32 +136,51 @@ li {
 	color: white;
 }
 
-.projects {
-	display: block;
-	padding: 15px;
+.codingprojects {
+	float: center;
+	border-radius: 6px;
+	background-color: #2196F3;
+	color: #ffffff;
+	width: 250px;
+	line-height: 250px;
+	text-align: center;
+	margin: 20px;
+	display: none;
 }
 
-.project {
-	position: relative;
-	display: block;
-	height: 325px;
-	width: 325px;
-	margin: 2%;
+.show {
+	display:inline-block;
 }
 
-.project-img {
-	height: 325px;
-	width: 325px;
-	border-radius:6px;
+.filter-button {
+	background-color: #e7e2e2;
+	padding: 20px;
+	border: none;
+	border-radius: 6px;
+	font-weight: 700;
+	color: #354259;
+	cursor: pointer;
+	margin-bottom: 5px;
+}
+
+.filter-button:hover {
+	background-color: #ddd;
+}
+
+.filter-button.active {
+	background-color: #354259;
+	color: white;
 }
 
 /* Footer */
 
-.footer {
+#footer {
  	padding: 0;
 	text-align: center;
 	height: 4em;
 	background-color: #354259;
+	bottom: 0%;
+	margin-bottom: 0;
 }
 
 #socials, #copyright {
