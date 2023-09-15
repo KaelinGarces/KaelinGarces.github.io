@@ -113,9 +113,22 @@ li {
 	padding: 60px;
 }
 
-.education-main {
+#education-title {
+	border-radius: 3px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	padding-bottom: 10px;
+}
+
+.education-info {
 	text-align: left;
 	justify-content: left;
+}
+
+.education-info > h3, h2, p {
+	text-align: left;
+	margin: 0;
+	padding: 8px;
 }
 
 /*Project Section*/
@@ -123,6 +136,13 @@ li {
 #projects-section {
 	padding: 50px;
 	text-align: center;
+}
+
+#projects-title {
+	border-radius: 3px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	padding-bottom: 10px;
 }
 
 #projects-nav {
