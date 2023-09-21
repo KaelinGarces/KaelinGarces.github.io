@@ -131,6 +131,14 @@ li {
 	padding: 8px;
 }
 
+.edlists {
+	max-width: 600px;
+}
+
+.certification-items {
+	margin: 2px;
+}
+
 /*Project Section*/
 
 #projects-section {
