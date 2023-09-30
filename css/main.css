@@ -113,7 +113,7 @@ li {
 #codebox {
 	display: block;
 	border-radius: 7px;
-	height: 250px;
+	min-height: 250px;
 	background-color: #354259;
 	margin-top: 20px;
 	min-width: 300px;
@@ -159,21 +159,70 @@ li {
 	width: 10px;
 }
 
-/* Code */
+/* Code */                     
 
 #code-container {
-	max-width: 500px;
+	max-width: 600px;
 	overflow-x: wrap;
+	overflow-y: auto;
 }
 
 .code {
-color: #e7e2e2;
-
+	color: #e7e2e2;
+	font-family: monospace;
 }
 
-.code > p {
-	overflow:hidden;
+.codelist {
+	margin: 0px;
+	display: block;
+	padding-left: 0;
 }
+
+.bullet {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: left;
+	max-height: auto;
+	margin: 0;
+	padding-left: 10px;
+	list-style: none;
+}
+
+.bulletlinks {
+	color:#e7e2e2;
+	text-decoration: underline;
+}
+
+#first-bullet {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#last-bullet {
+	padding-bottom: 15px;
+}
+
+.purple {
+	color: #AF7AC5;
+}
+.green {
+	color: #138D75;
+}
+.light_blue {
+	color: #85C1E9;
+}
+.blue {
+	color: #2980B9;
+}
+.orange {
+	color: #F0B27A;
+}
+.yellow {
+	color: #F4D03F;
+}
+.light_yellow {
+	color: #F9E79F;
+}
+
 
 /*Education*/
 #education-section {
